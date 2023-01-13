@@ -1,3 +1,6 @@
 Model: https://free3d.com/3d-model/skeleton-94668.html
 Rig: mixamo.com
 
+There are 2 fbx files for the skeleton.  Both are blender exports.
+skeleton.fbx is a standard export.
+skeleton_mesh.fbx is an export of only the empties and the meshes.  This way, we get regular meshes, not skinned meshes.
