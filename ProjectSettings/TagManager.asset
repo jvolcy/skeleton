@@ -7,7 +7,7 @@ TagManager:
   - CinemachineTarget
   - Bone
   - Cartilage
-  - HighlightedBone
+  - Mesh
   layers:
   - Default
   - TransparentFX

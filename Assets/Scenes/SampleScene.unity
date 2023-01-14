@@ -392,6 +392,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4582277379452294679, guid: 712d2783e128e472c8eb5c14fd4ef47a, type: 3}
   m_PrefabInstance: {fileID: 1949352467}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &350856828
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
+      propertyPath: m_Name
+      value: laser_pointer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 059166161cddd457d9dce52b9cbed1fe, type: 3}
 --- !u!1001 &363308386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2683,6 +2752,10 @@ PrefabInstance:
       value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -5952933592546078982, guid: 712d2783e128e472c8eb5c14fd4ef47a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5952933592546078982, guid: 712d2783e128e472c8eb5c14fd4ef47a, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -3186,6 +3259,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 5d7cf6cc8591b4c5bb959ee7009caca5, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 712d2783e128e472c8eb5c14fd4ef47a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5904544723048027723, guid: 712d2783e128e472c8eb5c14fd4ef47a, type: 3}
       propertyPath: m_TagString
       value: Cartilage
@@ -3741,7 +3818,7 @@ GameObject:
   - component: {fileID: 6115845554658246458}
   m_Layer: 0
   m_Name: fibula L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3809,7 +3886,7 @@ GameObject:
   - component: {fileID: 600229107191272087}
   m_Layer: 0
   m_Name: rib 3 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3827,7 +3904,7 @@ GameObject:
   - component: {fileID: 8319583243666468062}
   m_Layer: 0
   m_Name: rib 8 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3962,7 +4039,7 @@ GameObject:
   - component: {fileID: 5575911858812405735}
   m_Layer: 0
   m_Name: cuboid L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4022,7 +4099,7 @@ GameObject:
   - component: {fileID: 6811194539897999333}
   m_Layer: 0
   m_Name: toe 5 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4388,7 +4465,7 @@ GameObject:
   - component: {fileID: 3555826527671779212}
   m_Layer: 0
   m_Name: axis - cervical vertebrae C2
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4406,7 +4483,7 @@ GameObject:
   - component: {fileID: 1933477634383037073}
   m_Layer: 0
   m_Name: ulna R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4424,7 +4501,7 @@ GameObject:
   - component: {fileID: 1734383692885089924}
   m_Layer: 0
   m_Name: rib 5 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4450,7 +4527,7 @@ GameObject:
   - component: {fileID: 1933678108386589582}
   m_Layer: 0
   m_Name: rib 6 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4491,7 +4568,7 @@ GameObject:
   - component: {fileID: 5978509080381066019}
   m_Layer: 0
   m_Name: thoracic vertebrae T8
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4593,7 +4670,7 @@ GameObject:
   - component: {fileID: 6934944357362466663}
   m_Layer: 0
   m_Name: rib 2 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4699,7 +4776,7 @@ GameObject:
   - component: {fileID: 1638664206551344286}
   m_Layer: 0
   m_Name: lumbar vertebrae L1
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4748,7 +4825,7 @@ GameObject:
   - component: {fileID: 3611263391774331997}
   m_Layer: 0
   m_Name: lumbar vertebrae L3
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4781,7 +4858,7 @@ GameObject:
   - component: {fileID: 1509403307912237783}
   m_Layer: 0
   m_Name: toe 4 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4906,7 +4983,7 @@ GameObject:
   - component: {fileID: 5525135801860015439}
   m_Layer: 0
   m_Name: ring finger L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5046,7 +5123,7 @@ GameObject:
   - component: {fileID: 7264430711402087494}
   m_Layer: 0
   m_Name: tibia R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,7 +5149,7 @@ GameObject:
   - component: {fileID: 6268375765744017790}
   m_Layer: 0
   m_Name: cuboid R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5090,7 +5167,7 @@ GameObject:
   - component: {fileID: 3173880219411318692}
   m_Layer: 0
   m_Name: clavicle L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5108,7 +5185,7 @@ GameObject:
   - component: {fileID: 9020042955012233036}
   m_Layer: 0
   m_Name: talus L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5306,7 +5383,7 @@ GameObject:
   - component: {fileID: 7658803970660933702}
   m_Layer: 0
   m_Name: rib 1 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5366,7 +5443,7 @@ GameObject:
   - component: {fileID: 4140718454065574442}
   m_Layer: 0
   m_Name: sacrum
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5513,7 +5590,7 @@ GameObject:
   - component: {fileID: 2984563204978779567}
   m_Layer: 0
   m_Name: toe 1 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5531,7 +5608,7 @@ GameObject:
   - component: {fileID: 249449066780453495}
   m_Layer: 0
   m_Name: radius L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5557,7 +5634,7 @@ GameObject:
   - component: {fileID: 5399061343866463171}
   m_Layer: 0
   m_Name: thoracic vertebrae T4
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5617,7 +5694,7 @@ GameObject:
   - component: {fileID: 5820451686503895712}
   m_Layer: 0
   m_Name: toe 5 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5716,7 +5793,7 @@ GameObject:
   - component: {fileID: 7383907346764877794}
   m_Layer: 0
   m_Name: coccyx
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,7 +6002,7 @@ GameObject:
   - component: {fileID: 3837711034215143498}
   m_Layer: 0
   m_Name: mandible
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5937,13 +6014,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4545754377267439525}
-  m_LocalRotation: {x: 0.043506205, y: -5.201569e-10, z: 0.0000000014700308, w: 0.99905324}
-  m_LocalPosition: {x: 0, y: -0.013416123, z: -0.0009710782}
+  m_LocalRotation: {x: 0.04350838, y: -5.1834104e-10, z: 0.0000000014410393, w: 0.99905306}
+  m_LocalPosition: {x: 0, y: -0.012209268, z: -0.0009711365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1799034794}
-  m_RootOrder: 12
+  m_Father: {fileID: 1512908856}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2148137602972951904
 MeshFilter:
@@ -5981,7 +6058,7 @@ GameObject:
   - component: {fileID: 1881736370294526547}
   m_Layer: 0
   m_Name: carpal bones R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6194,7 +6271,7 @@ GameObject:
   - component: {fileID: 3453481907501242167}
   m_Layer: 0
   m_Name: scapula R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6236,7 +6313,7 @@ GameObject:
   - component: {fileID: 915478965625947256}
   m_Layer: 0
   m_Name: navicular R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6254,7 +6331,7 @@ GameObject:
   - component: {fileID: 5452027928314602415}
   m_Layer: 0
   m_Name: toe 3 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6272,7 +6349,7 @@ GameObject:
   - component: {fileID: 8024370356262329109}
   m_Layer: 0
   m_Name: cervical vertebrae C3
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6313,7 +6390,7 @@ GameObject:
   - component: {fileID: 5888139940864164368}
   m_Layer: 0
   m_Name: pinky finger L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6331,7 +6408,7 @@ GameObject:
   - component: {fileID: 9069548060995056411}
   m_Layer: 0
   m_Name: thumb L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6496,7 +6573,7 @@ GameObject:
   - component: {fileID: 1548988117176770368}
   m_Layer: 0
   m_Name: talus R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6671,7 +6748,7 @@ GameObject:
   - component: {fileID: 2392692036007893115}
   m_Layer: 0
   m_Name: toe 2 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6733,7 +6810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3286919609628201460
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6786,7 +6863,7 @@ GameObject:
   - component: {fileID: 3865086991684193850}
   m_Layer: 0
   m_Name: rib 10 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6862,7 +6939,7 @@ GameObject:
   - component: {fileID: 5627263219616760821}
   m_Layer: 0
   m_Name: patella R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6880,7 +6957,7 @@ GameObject:
   - component: {fileID: 6592598456637877216}
   m_Layer: 0
   m_Name: navicular L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7067,7 +7144,7 @@ GameObject:
   - component: {fileID: 3995758287648181569}
   m_Layer: 0
   m_Name: radius R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7165,7 +7242,7 @@ GameObject:
   - component: {fileID: 6553448148240284878}
   m_Layer: 0
   m_Name: index finger R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7327,7 +7404,7 @@ GameObject:
   - component: {fileID: 5352664839350862972}
   m_Layer: 0
   m_Name: pinky finger R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7402,7 +7479,7 @@ GameObject:
   - component: {fileID: 5029498072007080346}
   m_Layer: 0
   m_Name: rib 3 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7428,7 +7505,7 @@ GameObject:
   - component: {fileID: 6708963166671158655}
   m_Layer: 0
   m_Name: calcaneus R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7607,7 +7684,7 @@ GameObject:
   - component: {fileID: 7587887147439778290}
   m_Layer: 0
   m_Name: rib 5 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7726,7 +7803,7 @@ GameObject:
   - component: {fileID: 4096732676028770805}
   m_Layer: 0
   m_Name: thoracic vertebrae T10
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7834,7 +7911,7 @@ GameObject:
   - component: {fileID: 6023493364831103482}
   m_Layer: 0
   m_Name: humerus R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7882,7 +7959,7 @@ GameObject:
   - component: {fileID: 6926147582748657399}
   m_Layer: 0
   m_Name: rib 8 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7900,7 +7977,7 @@ GameObject:
   - component: {fileID: 7826787334488408482}
   m_Layer: 0
   m_Name: rib 4 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7949,7 +8026,7 @@ GameObject:
   - component: {fileID: 7790083465531081959}
   m_Layer: 0
   m_Name: humerus L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8017,7 +8094,7 @@ GameObject:
   - component: {fileID: 7783579843751289519}
   m_Layer: 0
   m_Name: cervical vertebrae C7
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8109,7 +8186,7 @@ GameObject:
   - component: {fileID: 7372281526344791858}
   m_Layer: 0
   m_Name: rib 10 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8202,7 +8279,7 @@ GameObject:
   - component: {fileID: 1388643423381063321}
   m_Layer: 0
   m_Name: rib 7 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8250,7 +8327,7 @@ GameObject:
   - component: {fileID: 5812413026541276531}
   m_Layer: 0
   m_Name: scapula L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8268,7 +8345,7 @@ GameObject:
   - component: {fileID: 6209676988184291753}
   m_Layer: 0
   m_Name: atlas - cervical vertebrae C1
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8501,7 +8578,7 @@ GameObject:
   - component: {fileID: 7578335982005742316}
   m_Layer: 0
   m_Name: middle finger L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8527,7 +8604,7 @@ GameObject:
   - component: {fileID: 8740523638312904354}
   m_Layer: 0
   m_Name: rib 9 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8587,7 +8664,7 @@ GameObject:
   - component: {fileID: 7883408157815209041}
   m_Layer: 0
   m_Name: toe 2 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8647,7 +8724,7 @@ GameObject:
   - component: {fileID: 6526573256028810520}
   m_Layer: 0
   m_Name: thoracic vertebrae T12
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8806,7 +8883,7 @@ GameObject:
   - component: {fileID: 8997008705176751662}
   m_Layer: 0
   m_Name: thoracic vertebrae T11
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9021,7 +9098,7 @@ GameObject:
   - component: {fileID: 7455383322642452202}
   m_Layer: 0
   m_Name: skull
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9208,13 +9285,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5588701740115584186}
-  m_LocalRotation: {x: 0.043506205, y: -5.201569e-10, z: 0.0000000014700308, w: 0.99905324}
-  m_LocalPosition: {x: 0, y: -0.013416123, z: -0.0009710782}
+  m_LocalRotation: {x: 0.04350838, y: -5.1834104e-10, z: 0.0000000014410393, w: 0.99905306}
+  m_LocalPosition: {x: 0, y: -0.012209268, z: -0.0009711365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1799034794}
-  m_RootOrder: 14
+  m_Father: {fileID: 1512908856}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5992743858313131200
 MeshFilter:
@@ -9295,7 +9372,7 @@ GameObject:
   - component: {fileID: 8977694185888600109}
   m_Layer: 0
   m_Name: rib 1 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9328,7 +9405,7 @@ GameObject:
   - component: {fileID: 1902118385684782610}
   m_Layer: 0
   m_Name: calcaneus L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9396,7 +9473,7 @@ GameObject:
   - component: {fileID: 863004922734496174}
   m_Layer: 0
   m_Name: toe 4 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9414,7 +9491,7 @@ GameObject:
   - component: {fileID: 2273230005720637212}
   m_Layer: 0
   m_Name: toe 3 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9449,13 +9526,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5676083244598101571}
-  m_LocalRotation: {x: 0.043506205, y: -5.201569e-10, z: 0.0000000014700308, w: 0.99905324}
-  m_LocalPosition: {x: 0, y: -0.013416123, z: -0.0009710782}
+  m_LocalRotation: {x: 0.04350838, y: -5.1834104e-10, z: 0.0000000014410393, w: 0.99905306}
+  m_LocalPosition: {x: 0, y: -0.012209268, z: -0.0009711365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1799034794}
-  m_RootOrder: 13
+  m_Father: {fileID: 1512908856}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6209676988184291753
 MeshRenderer:
@@ -9562,7 +9639,7 @@ GameObject:
   - component: {fileID: 1537616249458853761}
   m_Layer: 0
   m_Name: thoracic vertebrae T5
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9652,7 +9729,7 @@ GameObject:
   - component: {fileID: 429612949832019139}
   m_Layer: 0
   m_Name: toe 1 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9685,7 +9762,7 @@ GameObject:
   - component: {fileID: 4570444112119291457}
   m_Layer: 0
   m_Name: floating rib 11 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9841,7 +9918,7 @@ GameObject:
   - component: {fileID: 1210347150577148382}
   m_Layer: 0
   m_Name: floating rib 11 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9859,7 +9936,7 @@ GameObject:
   - component: {fileID: 8412617845396502874}
   m_Layer: 0
   m_Name: lumbar vertebrae L4
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9892,7 +9969,7 @@ GameObject:
   - component: {fileID: 6957439298928560408}
   m_Layer: 0
   m_Name: rib 7 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10145,7 +10222,7 @@ GameObject:
   - component: {fileID: 6599983124632471626}
   m_Layer: 0
   m_Name: thumb R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10201,7 +10278,7 @@ GameObject:
   - component: {fileID: 5011251591880942780}
   m_Layer: 0
   m_Name: thoracic vertebrae T6
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10219,7 +10296,7 @@ GameObject:
   - component: {fileID: 6256153663716417074}
   m_Layer: 0
   m_Name: cervical vertebrae C5
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10311,7 +10388,7 @@ GameObject:
   - component: {fileID: 7130073015998591744}
   m_Layer: 0
   m_Name: cervical vertebrae C6
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10401,7 +10478,7 @@ GameObject:
   - component: {fileID: 1333523430842816645}
   m_Layer: 0
   m_Name: thoracic vertebrae T1
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10419,7 +10496,7 @@ GameObject:
   - component: {fileID: 439915720686904479}
   m_Layer: 0
   m_Name: rib 2 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10437,7 +10514,7 @@ GameObject:
   - component: {fileID: 5760678270833850588}
   m_Layer: 0
   m_Name: femur L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10455,7 +10532,7 @@ GameObject:
   - component: {fileID: 6527388411586523335}
   m_Layer: 0
   m_Name: floating rib 12 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10677,7 +10754,7 @@ GameObject:
   - component: {fileID: 7076832395767907139}
   m_Layer: 0
   m_Name: rib 4 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10779,7 +10856,7 @@ GameObject:
   - component: {fileID: 6479599853825395923}
   m_Layer: 0
   m_Name: patella L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10878,7 +10955,7 @@ GameObject:
   - component: {fileID: 118836472797700261}
   m_Layer: 0
   m_Name: fibula R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10896,7 +10973,7 @@ GameObject:
   - component: {fileID: 2031976492000093307}
   m_Layer: 0
   m_Name: cuneiforms R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11052,7 +11129,7 @@ GameObject:
   - component: {fileID: 3976866276242868396}
   m_Layer: 0
   m_Name: clavicle R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11299,7 +11376,7 @@ GameObject:
   - component: {fileID: 8869942527427827972}
   m_Layer: 0
   m_Name: cervical vertebrae C4
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11466,7 +11543,7 @@ GameObject:
   - component: {fileID: 5910512962683667154}
   m_Layer: 0
   m_Name: ulna L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11484,7 +11561,7 @@ GameObject:
   - component: {fileID: 1491484076788719170}
   m_Layer: 0
   m_Name: femur R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11544,7 +11621,7 @@ GameObject:
   - component: {fileID: 2832208908236143841}
   m_Layer: 0
   m_Name: thoracic vertebrae T3
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11676,7 +11753,7 @@ GameObject:
   - component: {fileID: 207319639128726528}
   m_Layer: 0
   m_Name: cuneiforms L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11709,7 +11786,7 @@ GameObject:
   - component: {fileID: 15828111964702510}
   m_Layer: 0
   m_Name: thoracic vertebrae T2
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11758,7 +11835,7 @@ GameObject:
   - component: {fileID: 463738372584829132}
   m_Layer: 0
   m_Name: hipbone (pelvic girdle)
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11776,7 +11853,7 @@ GameObject:
   - component: {fileID: 5376004444277585693}
   m_Layer: 0
   m_Name: index finger L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11802,7 +11879,7 @@ GameObject:
   - component: {fileID: 2308782793288968007}
   m_Layer: 0
   m_Name: rib 9 R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11915,7 +11992,7 @@ GameObject:
   - component: {fileID: 8642274992570938202}
   m_Layer: 0
   m_Name: middle finger R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11948,7 +12025,7 @@ GameObject:
   - component: {fileID: 848797574131912949}
   m_Layer: 0
   m_Name: sternum
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12008,7 +12085,7 @@ GameObject:
   - component: {fileID: 3250772452920506052}
   m_Layer: 0
   m_Name: lumbar vertebrae L2
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12035,13 +12112,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841450563464016859}
-  m_LocalRotation: {x: 0.043506205, y: -5.201569e-10, z: 0.0000000014700308, w: 0.99905324}
-  m_LocalPosition: {x: 0, y: -0.013416123, z: -0.0009710782}
+  m_LocalRotation: {x: 0.04350838, y: -5.1834104e-10, z: 0.0000000014410393, w: 0.99905306}
+  m_LocalPosition: {x: 0, y: -0.012209268, z: -0.0009711365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1799034794}
-  m_RootOrder: 10
+  m_Father: {fileID: 1512908856}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8536608278106847393
 MeshFilter:
@@ -12072,7 +12149,7 @@ GameObject:
   - component: {fileID: 5105959108021626363}
   m_Layer: 0
   m_Name: ring finger R
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12090,7 +12167,7 @@ GameObject:
   - component: {fileID: 9117781112189892866}
   m_Layer: 0
   m_Name: lumbar vertebrae L5
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12212,7 +12289,7 @@ GameObject:
   - component: {fileID: 5633377260213441561}
   m_Layer: 0
   m_Name: thoracic vertebrae T7
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12253,7 +12330,7 @@ GameObject:
   - component: {fileID: 6458300660602479119}
   m_Layer: 0
   m_Name: floating rib 12 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12387,7 +12464,7 @@ GameObject:
   - component: {fileID: 5631015169467449278}
   m_Layer: 0
   m_Name: thoracic vertebrae T9
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12495,7 +12572,7 @@ GameObject:
   - component: {fileID: 1180049071331613161}
   m_Layer: 0
   m_Name: rib 6 L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12513,7 +12590,7 @@ GameObject:
   - component: {fileID: 8740544926015916777}
   m_Layer: 0
   m_Name: tibia L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12674,13 +12751,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8857009778956705589}
-  m_LocalRotation: {x: 0.043506205, y: -5.201569e-10, z: 0.0000000014700308, w: 0.99905324}
-  m_LocalPosition: {x: 0, y: -0.013416123, z: -0.0009710782}
+  m_LocalRotation: {x: 0.04350838, y: -5.1834104e-10, z: 0.0000000014410393, w: 0.99905306}
+  m_LocalPosition: {x: 0, y: -0.012209268, z: -0.0009711365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1799034794}
-  m_RootOrder: 11
+  m_Father: {fileID: 1512908856}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &9033446803067199130
 Transform:
@@ -12752,7 +12829,7 @@ GameObject:
   - component: {fileID: 624210137373137866}
   m_Layer: 0
   m_Name: carpal bones L
-  m_TagString: HighlightedBone
+  m_TagString: Mesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
