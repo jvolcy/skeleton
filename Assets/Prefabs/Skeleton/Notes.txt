@@ -4,3 +4,6 @@ Rig: mixamo.com
 There are 2 fbx files for the skeleton.  Both are blender exports.
 skeleton.fbx is a standard export.
 skeleton_mesh.fbx is an export of only the empties and the meshes.  This way, we get regular meshes, not skinned meshes.
+
+
+Much of the thorax is parented to T6.  Make sure to specify a mesh for the T6 "XR Interactable Collider" component's "Colliders" element.  If this is not specified, the component will automatically add the GO's collider as well as the colliders from all the GO's children.  To avoid this, whenever one of the bones is parent to another bone, its collider should be explicitly specified.  As of this writing, this applies only to T6.  All other bones are parented to a rig element.
