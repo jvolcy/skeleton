@@ -9,17 +9,79 @@ public class ModelController : MonoBehaviour
     public Material NormalBoneMaterial;
     public Material HighlightedBoneMaterial;
     public TMP_Text PartName;
+    Animator animator;
+    string[] Poses = { "T-pose", "stand", "pose1", "pose2", "pose3" };
+    int CurrentPose;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        CurrentPose = 0;
+        SetPose(Poses[CurrentPose]);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    public void TogglePose()
+    {
+        CurrentPose = (CurrentPose + 1) % Poses.Length;
+        SetPose(Poses[CurrentPose]);
+    }
+
+    void SetPose(string pose)
+    {
+        animator.SetTrigger(pose);
+    }
+
+    /*
+    void TPose()
+    {
+        animator.SetTrigger("T-pose");
+    }
+
+    void stand()
+    {
+        animator.SetTrigger("stand");
+    }
+
+    void pose1()
+    {
+        animator.SetTrigger("pose1");
+    }
+
+    void pose2()
+    {
+        animator.SetTrigger("pose2");
+    }
+
+    void pose3()
+    {
+        animator.SetTrigger("pose3");
+    }
+    */
+
+    public void lookAround()
+    {
+        animator.SetTrigger("look_around");
+    }
+
+    public void walk()
+    {
+        animator.SetTrigger("walk");
+    }
+
+    public void run()
+    {
+        animator.SetTrigger("run");
+    }
+
+    public void SetAnimationSpeed(float speed)
+    {
+        animator.speed = speed;
     }
 
     void HighlightObject(GameObject gameObject)
