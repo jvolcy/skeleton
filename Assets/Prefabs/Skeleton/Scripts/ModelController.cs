@@ -10,13 +10,17 @@ public class ModelController : MonoBehaviour
     public Material HighlightedBoneMaterial;
     public TMP_Text PartName;
     Animator animator;
+
+    //create a list of the Animator trigger strings corresponding to the poses in the animation controller.
     string[] Poses = { "T-pose", "stand", "pose1", "pose2", "pose3" };
-    int CurrentPose;
+    int CurrentPose;    //we will keep track of the currently selected pose
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        //set the default pose to pose 0
         CurrentPose = 0;
         SetPose(Poses[CurrentPose]);
     }
@@ -26,12 +30,19 @@ public class ModelController : MonoBehaviour
     {
     }
 
+    /// <summary>
+    /// function that selects poses in a round-robin fashion.
+    /// </summary>
     public void TogglePose()
     {
         CurrentPose = (CurrentPose + 1) % Poses.Length;
         SetPose(Poses[CurrentPose]);
     }
 
+    /// <summary>
+    /// fuction that sets the animator pose based on the trigger string.
+    /// </summary>
+    /// <param name="pose"></param>
     void SetPose(string pose)
     {
         animator.SetTrigger(pose);
