@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelMenuCtrl : MonoBehaviour
 {
+    public Slider SpeedSlider;
     Animator animator;
 
     // Start is called before the first frame update

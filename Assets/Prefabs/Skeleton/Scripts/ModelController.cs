@@ -47,7 +47,7 @@ public class ModelController : MonoBehaviour
     }
 
     /// <summary>
-    /// fuction that sets the animator pose based on the trigger string.
+    /// function that sets the animator pose based on the trigger string.
     /// </summary>
     /// <param name="pose"></param>
     void SetPose(string pose)
@@ -56,22 +56,10 @@ public class ModelController : MonoBehaviour
         animator.Play(pose);
     }
 
-    public void lookAround()
+    public void PlayAnimation(string animationName)
     {
         RestoreTransform();
-        animator.Play("look_around");
-    }
-
-    public void walk()
-    {
-        RestoreTransform();
-        animator.Play("walk");
-    }
-
-    public void run()
-    {
-        RestoreTransform();
-        animator.Play("run");
+        animator.Play(animationName);
     }
 
     public void SetAnimationSpeed(System.Single speed)
@@ -119,7 +107,7 @@ public class ModelController : MonoBehaviour
     {
         defaultPosition = transform.position;
         defaultRotation = transform.rotation;
-        defaultLocalScale = transform.localScale;
+        //defaultLocalScale = transform.localScale;
     }
 
     /// <summary>
@@ -132,6 +120,6 @@ public class ModelController : MonoBehaviour
     {
         transform.position = defaultPosition;
         transform.rotation = defaultRotation;
-        transform.localScale = defaultLocalScale;
+        //transform.localScale = defaultLocalScale;
     }
 }
