@@ -344,7 +344,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1253668450}
         m_TargetAssemblyTypeName: ModelController, Assembly-CSharp
-        m_MethodName: TogglePose
+        m_MethodName: CycleThroughPoses
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3339,6 +3339,12 @@ MonoBehaviour:
   NormalBoneMaterial: {fileID: 2100000, guid: 46fc68d46be4145d4bf6e2e2cc930ec2, type: 2}
   HighlightedBoneMaterial: {fileID: 2100000, guid: 9be8b32062ba7444e9abb95e3b621702, type: 2}
   PartName: {fileID: 1970818181}
+  Poses:
+  - T-Pose
+  - stand
+  - action_pose1
+  - action_pose2
+  - action_pose3
 --- !u!1 &1323143749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4516,7 +4522,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1253668450}
         m_TargetAssemblyTypeName: ModelController, Assembly-CSharp
         m_MethodName: SetAnimationSpeed
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -10,15 +10,22 @@ public class ModelController : MonoBehaviour
     public Material HighlightedBoneMaterial;
     public TMP_Text PartName;
     Animator animator;
+    Vector3 defaultPosition;
+    Quaternion defaultRotation;
+    Vector3 defaultLocalScale;
 
-    //create a list of the Animator trigger strings corresponding to the poses in the animation controller.
-    string[] Poses = { "T-pose", "stand", "pose1", "pose2", "pose3" };
+    //Create a default list of the pose animation clips.  This does not include the moving animations.
+    //We need the list so we can cycle through the different poses.
+    public string[] Poses = { "T-Pose", "stand", "action_pose1", "action_pose2", "action_pose3" };
     int CurrentPose;    //we will keep track of the currently selected pose
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        //create a copy of the current transform values
+        SaveTransform();
 
         //set the default pose to pose 0
         CurrentPose = 0;
@@ -33,7 +40,7 @@ public class ModelController : MonoBehaviour
     /// <summary>
     /// function that selects poses in a round-robin fashion.
     /// </summary>
-    public void TogglePose()
+    public void CycleThroughPoses()
     {
         CurrentPose = (CurrentPose + 1) % Poses.Length;
         SetPose(Poses[CurrentPose]);
@@ -45,53 +52,31 @@ public class ModelController : MonoBehaviour
     /// <param name="pose"></param>
     void SetPose(string pose)
     {
-        animator.SetTrigger(pose);
+        RestoreTransform();
+        animator.Play(pose);
     }
-
-    /*
-    void TPose()
-    {
-        animator.SetTrigger("T-pose");
-    }
-
-    void stand()
-    {
-        animator.SetTrigger("stand");
-    }
-
-    void pose1()
-    {
-        animator.SetTrigger("pose1");
-    }
-
-    void pose2()
-    {
-        animator.SetTrigger("pose2");
-    }
-
-    void pose3()
-    {
-        animator.SetTrigger("pose3");
-    }
-    */
 
     public void lookAround()
     {
-        animator.SetTrigger("look_around");
+        RestoreTransform();
+        animator.Play("look_around");
     }
 
     public void walk()
     {
-        animator.SetTrigger("walk");
+        RestoreTransform();
+        animator.Play("walk");
     }
 
     public void run()
     {
-        animator.SetTrigger("run");
+        RestoreTransform();
+        animator.Play("run");
     }
 
-    public void SetAnimationSpeed(float speed)
+    public void SetAnimationSpeed(System.Single speed)
     {
+        //Debug.Log("Speed = " + speed);
         animator.speed = speed;
     }
 
@@ -121,5 +106,32 @@ public class ModelController : MonoBehaviour
 
         //Debug.Log("Exited " + gameObject.name);
         UnHighlightObject(gameObject);
+    }
+
+
+    /// <summary>
+    /// We will save and restore the default Xform to prevent model drift.
+    /// Each animation may introduce some root motion that should not be allowed
+    /// to accumulate.  This function saves the default transform.  It should
+    /// be called once in Start().
+    /// </summary>
+    void SaveTransform()
+    {
+        defaultPosition = transform.position;
+        defaultRotation = transform.rotation;
+        defaultLocalScale = transform.localScale;
+    }
+
+    /// <summary>
+    /// We will save and restore the default Xform to prevent model drift.
+    /// Each animation may introduce some root motion that should not be allowed
+    /// to accumulate.  This function restores the default transform.  It
+    /// should be called every time we change the pose or animation clip.
+    /// </summary>
+    void RestoreTransform()
+    {
+        transform.position = defaultPosition;
+        transform.rotation = defaultRotation;
+        transform.localScale = defaultLocalScale;
     }
 }
