@@ -1,0 +1,5 @@
+
+CanvasQuad should automatically attach itself as a parent to the object tagged 'Main Camera'.  That way, it works in XR and DESKTOP modes, becomes portable and is easy to enable/disable (right now, you have to search for it in the object heierachy.
+
+
+
