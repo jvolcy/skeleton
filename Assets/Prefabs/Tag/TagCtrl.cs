@@ -20,6 +20,10 @@ public class TagCtrl : MonoBehaviour
         }
     }
 
+    public Transform LineAttachPoint;
+    public MeshRenderer Target;
+    LineRenderer lineRenderer;
+
     public TMP_Text FrontText;
     public TMP_Text RearText;
 
@@ -28,12 +32,20 @@ public class TagCtrl : MonoBehaviour
     {
         //initialize both front and rear texts
         Text = "";
+
+        //get a reference to the line renderer
+        lineRenderer = GetComponent<LineRenderer>();
+
+        //if the user didn't specify an attach point for the line,
+        //use the tag object's transform as the attchment point
+        if (LineAttachPoint == null) LineAttachPoint = transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        lineRenderer.SetPosition(0, LineAttachPoint.position);
+        lineRenderer.SetPosition(1, Target.bounds.center);
     }
 
 }

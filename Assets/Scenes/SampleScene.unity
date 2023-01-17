@@ -6019,6 +6019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933b35fc2947140d192fc7fc2ed06bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
   DistanceFromCamera: 0.5
   Scale: 0.5
 --- !u!1 &2055959578
@@ -8103,6 +8104,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4611140803654358377, guid: a7c1906c3832e4ebc9888b01740990d0, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 5760678270833850588}
     - target: {fileID: 6123837842946962999, guid: a7c1906c3832e4ebc9888b01740990d0, type: 3}
       propertyPath: m_RootOrder
       value: 1
