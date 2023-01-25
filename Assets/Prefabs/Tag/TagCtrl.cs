@@ -27,8 +27,10 @@ public class TagCtrl : MonoBehaviour
     {
         set
         {
+            if (value) UnSelectAllOthers();
             isSelected = value;
-            if (isSelected) UnSelectAllOthers();
+
+            Debug.Log("Hand.SetActive(" + isSelected + ")");
             Hand.SetActive(isSelected);
         }
         get { return isSelected; }
@@ -41,6 +43,7 @@ public class TagCtrl : MonoBehaviour
 
     public TMP_Text FrontText;
     public TMP_Text RearText;
+    public GameObject Ball;
     public GameObject Hand;
 
     // Start is called before the first frame update
@@ -57,13 +60,18 @@ public class TagCtrl : MonoBehaviour
         if (LineAttachPoint == null) LineAttachPoint = transform;
 
         Hand.SetActive(isSelected);
+
+        if (Target != null)
+            Ball.GetComponent<BallCtrl>().Target = Target;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         lineRenderer.SetPosition(0, LineAttachPoint.position);
-        lineRenderer.SetPosition(1, Target.bounds.center);
+        lineRenderer.SetPosition(1, Ball.transform.position);
+        //lineRenderer.SetPosition(1, Target.bounds.center);
     }
 
     void UnSelectAllOthers()
@@ -76,15 +84,34 @@ public class TagCtrl : MonoBehaviour
     }
 
     public void Selected(SelectEnterEventArgs args)
-    { Debug.Log("Tag Selected"); }
+    { 
+        //Debug.Log("Tag Selected");
+        Select = true;
+
+        //args.interactor.GetComponent<XRRayInteractor>().allowAnchorControl = true;
+        args.interactorObject.transform.GetComponent<XRRayInteractor>().allowAnchorControl = true;
+
+        //disable snap turning when we are holding a tag
+        args.interactorObject.transform.GetComponentInParent<ActionBasedSnapTurnProvider>().enabled = false;
+    }
 
     public void DeSelected(SelectExitEventArgs args)
-    { Debug.Log("Tag DeSelected"); }
+    { 
+        //Debug.Log("Tag DeSelected");
+        Select = false;
 
+        //args.interactor.GetComponent<XRRayInteractor>().allowAnchorControl = false;
+        args.interactorObject.transform.GetComponent<XRRayInteractor>().allowAnchorControl = false;
+
+        //enable snap turning when we are not holding a tag
+        args.interactorObject.transform.GetComponentInParent<ActionBasedSnapTurnProvider>().enabled = true;
+    }
+
+    /*
     public void Activated(ActivateEventArgs args)
     { Debug.Log("Tag Activated"); }
 
     public void DeActivated(DeactivateEventArgs args)
     { Debug.Log("Tag DeActivated"); }
-
+    */
 }

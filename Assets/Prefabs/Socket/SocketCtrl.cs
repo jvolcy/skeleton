@@ -21,6 +21,13 @@ public class SocketCtrl : MonoBehaviour
         //2) auto-compute its transform from our bounds, if AutoCalculateXform is true
         //3) set its color
         //4) hide it if AutoHide is true
+
+        GameObject go = Instantiate(SocketPrefab, transform, true);
+        go.transform.position = GetComponent<MeshRenderer>().bounds.center;
+        
+        go.name = "Socket";
+        if (name.EndsWith(" R")) go.name += " R";
+        if (name.EndsWith(" L")) go.name += " L";
     }
 
     // Update is called once per frame
