@@ -38,7 +38,6 @@ public class TagCtrl : MonoBehaviour
         
 
     public Transform LineAttachPoint;
-    public MeshRenderer Target;
     LineRenderer lineRenderer;
 
     public TMP_Text FrontText;
@@ -60,9 +59,6 @@ public class TagCtrl : MonoBehaviour
         if (LineAttachPoint == null) LineAttachPoint = transform;
 
         Hand.SetActive(isSelected);
-
-        if (Target != null)
-            Ball.GetComponent<BallCtrl>().Target = Target;
     }
 
     // Update is called once per frame
