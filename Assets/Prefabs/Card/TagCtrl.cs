@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.UI;
 
 public class TagCtrl : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class TagCtrl : MonoBehaviour
     public TMP_Text RearText;
     public GameObject Ball;
     public GameObject Hand;
+    public Button DetachButton;
+    Vector3 BallResetPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +62,11 @@ public class TagCtrl : MonoBehaviour
         if (LineAttachPoint == null) LineAttachPoint = transform;
 
         Hand.SetActive(isSelected);
+
+        //store the default position of the vall
+        BallResetPosition = Ball.transform.position;
+
+        DetachButton.enabled = false;
     }
 
     // Update is called once per frame
@@ -101,6 +109,12 @@ public class TagCtrl : MonoBehaviour
 
         //enable snap turning when we are not holding a tag
         args.interactorObject.transform.GetComponentInParent<ActionBasedSnapTurnProvider>().enabled = true;
+    }
+
+    //function to detach the ball from any socket and return it to its default position
+    public void Detach()
+    {
+        Ball.transform.position = BallResetPosition;
     }
 
     /*
