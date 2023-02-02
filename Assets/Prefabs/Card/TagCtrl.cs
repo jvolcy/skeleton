@@ -31,7 +31,7 @@ public class TagCtrl : MonoBehaviour
             if (value) UnSelectAllOthers();
             isSelected = value;
 
-            Debug.Log("Hand.SetActive(" + isSelected + ")");
+            //Debug.Log("Hand.SetActive(" + isSelected + ")");
             Hand.SetActive(isSelected);
         }
         get { return isSelected; }
@@ -52,10 +52,10 @@ public class TagCtrl : MonoBehaviour
     void Start()
     {
         //initialize both front and rear texts
-        Text = "";
+        //Text = "";
 
         //get a reference to the line renderer
-        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer = GetComponentInParent<LineRenderer>();
 
         //if the user didn't specify an attach point for the line,
         //use the tag object's transform as the attchment point
@@ -66,7 +66,7 @@ public class TagCtrl : MonoBehaviour
         //store the default position of the vall
         BallResetPosition = Ball.transform.position;
 
-        DetachButton.enabled = false;
+        DetachButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -114,6 +114,7 @@ public class TagCtrl : MonoBehaviour
     //function to detach the ball from any socket and return it to its default position
     public void Detach()
     {
+        Debug.Log("Detach");
         Ball.transform.position = BallResetPosition;
     }
 
