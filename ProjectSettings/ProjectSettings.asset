@@ -706,7 +706,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: STARTER_ASSETS_PACKAGES_CHECKED
-    Standalone: STARTER_ASSETS_PACKAGES_CHECKED
+    Standalone: STARTER_ASSETS_PACKAGES_CHECKED;VUPLEX_CCU;VUPLEX_STANDALONE;VUPLEX_XR_INTERACTION_TOOLKIT;VUPLEX_OCULUS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
